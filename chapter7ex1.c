@@ -2,6 +2,12 @@
 // convert english units to metric units, it does not specify how many unit so I just did 3
 //investigate the convertions and then just apply them
 
+//float
+//main 
+// printf for each value
+// make the conversion
+// print the result
+
 float miles, gallon, kelvin;
 
 
