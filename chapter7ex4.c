@@ -10,13 +10,15 @@ float amount;
 float tax;
 float total;
 float Tax = .08;
+char rec[100];
 
 
 int main(void)
 {
        
   printf("Enter the value of your item\n");
-  scanf("%f", &amount); 
+  fgets(rec, sizeof(rec), stdin);
+  sscanf(rec, "%f", &amount); 
   tax = amount * Tax;
   total = amount + tax;
  
