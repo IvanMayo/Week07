@@ -15,7 +15,7 @@ float time2;
 
 
 int main(void){
- printf("Please introduce the amount of characters in the file");
+ printf("Please introduce the amount of characters in the file \n");
  scanf("%f", &size);
 
 // a while cycle and repeat the ex of the coin format, 
