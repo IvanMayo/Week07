@@ -16,7 +16,7 @@ int main(void)
 {
        
   printf("Enter the value of your item\n");
-  scanf("%f", &amount);
+  scanf("%f", &amount); 
   tax = amount * Tax;
   total = amount + tax;
  
