@@ -8,11 +8,12 @@ float quarter = 0;
 float dime = 0;
 float nickel = 0;
 float pennie = 0;
-
+char line [50];
 
 int main(void){
  printf("introduce cents, more than 0 and smaller or equal to 99 \n");
- scanf("%f", &money);
+ fgets(line, sizeof (line), stdin);
+ sscanf(line, "%f", &money);
 
  while (1) {
   if (money >= 25) {
