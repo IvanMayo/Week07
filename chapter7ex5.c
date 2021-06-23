@@ -10,9 +10,11 @@ int main (void)
   int num;
   int X;
   int prime;
+  char nu [10];
  
   printf("Enter a number \n");
-  scanf("%d", &num);
+  fgets(nu, sizeof(nu), stdin);
+  sscanf(nu, "%d", &num);
  
   if (num <= 1)
   {
