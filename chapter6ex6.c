@@ -4,11 +4,13 @@ int hourswork;
 int overworhours;
 int overpay;
 int payweek;
+char hour [15];
 
 
 int main(void){
 printf("Enter the hours of the worker \n");
-scanf("%d", &hourswork );
+fgets(hour, sizeof(hour), stdin);
+sscanf(hour, "%d", &hourswork );
 
 
   if (hourswork > 120){
@@ -19,14 +21,17 @@ scanf("%d", &hourswork );
     overworhours = hourswork - 40 ;
     overpay = overworhours * 15; // 1.5 * 10
     payweek = overpay + (hourwage * 40);
+    
+    printf("The total the worker gained along the 5 days week is %d", payweek);
    }
+   
 
   else if (hourswork <= 40){
     payweek = hourswork * hourwage;
-
+printf("The total the worker gained along the 5 days week is %d", payweek);
   }
 
-  printf("The total the worker gained along the 5 days week is %d", payweek);
+  
 
 
 
