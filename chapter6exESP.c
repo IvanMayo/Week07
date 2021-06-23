@@ -4,10 +4,12 @@
 int corn;
 int cornprice= 100;
 int total;
+char pro [100];
 
 int main(void){
   printf("insert the kilograms of corn \n");
-  scanf("%d", &corn);
+  fgets(pro, sizeof(pro), stdin);
+  sscanf(pro, "%d", &corn);
 
 
 
