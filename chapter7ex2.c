@@ -17,10 +17,10 @@ int total = 0;
 
 int main(void){
 
-  printf("Enter a beging year and a final year in dd mm yyyy-dd mm yyyy: \n");
+  printf("Enter a beging year and a final year in dd/mm/yyyy o dd/mm yyyy: \n");
 
 	fgets(date, sizeof(date), stdin);
-	sscanf(date, "%d %d %d-%d %d %d", &dayi, &monthi, &yeari, &dayf, &monthf, &yearf);
+	sscanf(date, "%d/%d/%d o %d/%d/%d", &dayi, &monthi, &yeari, &dayf, &monthf, &yearf);
 
 
 
