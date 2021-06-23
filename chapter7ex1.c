@@ -9,20 +9,17 @@
 // print the result
 
 float miles, gallon, kelvin;
-
+char engl [1000];
 
 float kilometer, liter, celcius;
 
 
 int main(void){
-  printf("enter miles \n");
-  scanf("%f", &miles);  
- 
-  printf("enter gallons \n");
-  scanf("%f", &gallon);
+printf("Enter miles/gallons/kelvin \n");
+fgets(engl, sizeof(engl), stdin);
+sscanf(engl, " %f/%f/%f ", &miles, &gallon, &kelvin);
 
-  printf("enter kelvin \n");
-  scanf("%f", &kelvin);
+ 
 
   kilometer = miles* 1.609;
   liter = gallon* 3.79;
