@@ -35,4 +35,6 @@ int main (void)
     printf("the number %d is prime \n", num);
   else
     printf("the number %d is not prime \n", num);
+
+    return 0;
 }
