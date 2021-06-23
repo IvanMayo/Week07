@@ -2,11 +2,12 @@
 #include <math.h>
 // this ones gives  a letter depending of the value you introduce, i used only if for a simple program and takes into acount the values
 int cal;
-
+char line [50];
 
 int main(void){
  printf("enter value\n");
- scanf(" %d", &cal);
+ fgets(line, sizeof(line), stdin);
+ sscanf(line, " %d", &cal);
 
  if (cal < 60) {
    printf("F");
