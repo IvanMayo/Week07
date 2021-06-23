@@ -11,12 +11,13 @@
 float size;
 float time;
 float time2;
-
+char line[10000000];
 
 
 int main(void){
  printf("Please introduce the amount of characters in the file \n");
- scanf("%f", &size);
+ fgets(line, sizeof(line), stdin);
+ sscanf(line, "%f", &size);
 
 // a while cycle and repeat the ex of the coin format, 
 while (size > 0){
